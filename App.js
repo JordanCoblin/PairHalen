@@ -16,7 +16,9 @@ class TeamMember extends Component {
         <Button 
         onPress={() => { this.props.handler(this.props.name) }}
         style={styles.teamMemberFont} 
-        title = {this.props.name} />
+        title = {this.props.name}
+        color = 'white'
+        />
       </View>
     );
   }
@@ -77,9 +79,9 @@ export default class ProjectDisco extends Component {
     return (
       <View style={{flex: 1}}>
 
-        <View style={{flex: 0.3, justifyContent:'center', alignItems: 'center', backgroundColor: 'orange'}}>
-          <Text style={styles.halenText}> Hey Halen! </Text>
-          <Text style={styles.halenText}> Who's pairing? </Text>
+        <View style={{flex: 0.35, justifyContent:'center', alignItems: 'center', backgroundColor: 'orange'}}>
+          <Text style={[styles.halenText, {paddingTop: 20}]}> Hey Halen! </Text>
+          <Text style={[styles.halenText, {fontSize: 25}]}> Who's pairing? </Text>
         </View>
 
         <View style={{flex: 2, flexDirection: 'row'}} >
