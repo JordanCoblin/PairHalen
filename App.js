@@ -30,7 +30,7 @@ export default class ProjectDisco extends Component {
     super(props);
 
     this.state = {
-      nonPairingMembers : ["An", "Francisco", "Kayle"],
+      nonPairingMembers : ["An", "Francisco", "Kayle", "Eliana", "Sophia", "Suyang", "Chris", "Jordan", "Owen"],
       pairingMembers : []
     };
   }
@@ -85,10 +85,10 @@ export default class ProjectDisco extends Component {
         </View>
 
         <View style={{flex: 2, flexDirection: 'row'}} >
-          <View style={{flex: 1, backgroundColor: 'steelblue', justifyContent: 'space-around'}} >
+          <View style={{flex: 1, backgroundColor: 'steelblue', justifyContent: 'space-around', alignItems: 'center'}} >
             {nonPairingMembersViews}
           </View>
-          <View style={{flex: 1, backgroundColor: 'skyblue', alignItems:'center', justifyContent:'center'}} >
+          <View style={{flex: 1, backgroundColor: 'skyblue', justifyContent: 'space-around', alignItems: 'center'}} >
             {pairingMembersViews}
           </View>
 
@@ -98,7 +98,7 @@ export default class ProjectDisco extends Component {
   }
 }
 
-let RADIUS = 35
+let RADIUS = 32
 
 const styles = StyleSheet.create({
   halenText: {
@@ -111,10 +111,11 @@ const styles = StyleSheet.create({
   teamMember: {
     backgroundColor: 'orange',
     width: RADIUS*3,
-    height: RADIUS*2,
-    borderRadius: RADIUS,
+    height: RADIUS*1.8,
+    borderRadius: RADIUS/2,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingTop: 0
   },
 
   teamMemberFont: {
